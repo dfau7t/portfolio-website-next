@@ -10,6 +10,5 @@ export const Navbar = () => {
           <a href="https://www.instagram.com/srivatsa_pidaparthi/" className="hover:text-foreground">Instagram</a>
           <div className="hover:text-foreground">CV</div>
         </div>
-
     );
 }

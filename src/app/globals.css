@@ -19,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #d7d6d7;
   }
 }
 
@@ -29,8 +29,12 @@ body {
   color: var(--foreground);
 }
 
+p {
+  @apply font-semibold text-sm;
+}
+
 .frame {
-  @apply rounded-2xl border-2 border-foreground
+  @apply rounded-2xl border-1 border-foreground
 }
 
 .title {

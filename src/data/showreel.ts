@@ -8,6 +8,7 @@ import shringaar from "../../public/showreel/shringaar.jpg";
 
 interface ShowreelVideo {
   img: StaticImageData;
+  title: string;
   link: string;
   desc: string;
 }
@@ -15,22 +16,30 @@ interface ShowreelVideo {
 export const Showreel: ShowreelVideo[] = [
   {
     img: chemical,
+    title: "Chemical Dialogues",
     link: "AouVGmW4uGY",
     desc: "Chemical Dialogues",
   },
   {
     img: plastic,
+    title: "Everywhere - How Plastic are We?",
     link: "m2VhZKgZpxY",
     desc: "Everywhere - How Plastic are We?",
   },
   {
     img: lucid,
+    title: "Lucid Dreams",
     link: "3m2l6vEUAIo",
     desc: "Lucid Dreams",
   },
-  { img: mela, link: "65xLSmgHS3M", desc: "Mela" },
+  { 
+    img: mela, 
+    title: "Mela", 
+    link: "65xLSmgHS3M", 
+    desc: "Mela" },
   {
     img: shringaar,
+    title: "Shringaar",
     link: "EpCCZoaVGHU",
     desc: "Shringaar",
   },

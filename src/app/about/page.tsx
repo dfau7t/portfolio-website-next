@@ -5,7 +5,7 @@ import { ChevronLeft } from "react-feather";
 
 export default function About() {
   return (
-    <div className="frame mx-5 my-2.5 px-5 py-2.5 h-[90vh] flex flex-col gap-5">
+    <div className="frame mx-5 my-2.5 mt-5 px-5 py-2.5 h-[90vh] flex flex-col gap-5">
       <div className="flex justify-between align-middle items-center font-semibold uppercase text-secondary">
         <Link href="/"><ChevronLeft size={20} strokeWidth={3} className="text-secondary align-middle" /></Link>
         <Navbar />
@@ -13,7 +13,7 @@ export default function About() {
       <div className="uppercase font-semibold">
         creating<br /> play<br /> with immersive design
       </div>
-      <div className="w-[45vw] font-semibold text-sm space-y-5">
+      <div className="w-[45vw] space-y-5">
         <p>
           Hello, I'm Srivatsa Pidaparthi. <br />
 
@@ -29,13 +29,13 @@ export default function About() {
           I'm fluent in the languages of both design and development, and my toolkit reflects that. 
           On any given day, you might find me: <br />
         </p>
-        <ul>
-          <li>Building virtual environments in Unreal Engine or Unity.</li>
-          <li>Modeling intricate objects in Blender or Rhinoceros.</li>
-          <li>Creating interactive visuals with TouchDesigner.</li>
-          <li>Editing sequences in DaVinci Resolve.</li>
-          <li>Making music in VCV Rack.</li>
-          <li>Designing interfaces in Figma.</li>
+        <ul className="font-semibold text-sm">
+          <li>&#8226; Building virtual environments in Unreal Engine or Unity.</li>
+          <li>&#8226; Modeling intricate objects in Blender or Rhinoceros.</li>
+          <li>&#8226; Creating interactive visuals with TouchDesigner.</li>
+          <li>&#8226; Editing sequences in DaVinci Resolve.</li>
+          <li>&#8226; Making music in VCV Rack.</li>
+          <li>&#8226; Designing interfaces in Figma.</li>
         </ul>
         <p>
           I'm driven by curiosity and a love for making things that feel right. 
