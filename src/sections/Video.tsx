@@ -6,7 +6,7 @@ interface VideoProps {
 
 export default async function Video(props: any) {
     return (
-        <div className="frame grid grid-cols-5 grid-rows-3 mx-5 my-2.5 p-2.5 gap-2.5">
+        <div className="frame grid grid-cols-5 grid-rows-3 mx-5 my-2.5 p-5 gap-5">
             <div className="col-span-2 row-span-3 frame overflow-clip">
                 <Image 
                     src={props.img}

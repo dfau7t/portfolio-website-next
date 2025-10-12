@@ -5,7 +5,7 @@ import { ChevronLeft } from "react-feather";
 
 export default function About() {
   return (
-    <div className="frame h-[88vh] flex flex-col gap-5">
+    <div className="frame mx-5 my-2.5 px-5 py-2.5 h-[90vh] flex flex-col gap-5">
       <div className="flex justify-between align-middle items-center font-semibold uppercase text-secondary">
         <Link href="/"><ChevronLeft size={20} strokeWidth={3} className="text-secondary align-middle" /></Link>
         <Navbar />
