@@ -16,7 +16,7 @@ export const Navbar = () => {
         <div className="w-[20px] h-[2px] bg-secondary align-middle hidden md:block"></div>
         <a href="https://www.linkedin.com/in/srivatsa-pidaparthi" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">LinkedIn</a>
         <a href="https://www.instagram.com/srivatsa_pidaparthi/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Instagram</a>
-        <div className="hover:text-foreground cursor-pointer">CV</div>
+        <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-foreground" download>CV</Link>
       </>
     );
 
