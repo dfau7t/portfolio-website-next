@@ -1,4 +1,3 @@
-import { ImageOptimizerCache } from "next/dist/server/image-optimizer";
 import Image from "next/image";
 
 interface VideoProps {
