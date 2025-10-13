@@ -22,8 +22,8 @@ export default function Home() {
           </div>
           <Navbar />
       </div>
-      <div className="grid grid-cols-2">
-        <div></div>
+      <div className="grid grid-cols-2 mx-5 my-2.5">
+        {/* <div></div> */}
         <div><Hero /></div>
       </div>
       </div>

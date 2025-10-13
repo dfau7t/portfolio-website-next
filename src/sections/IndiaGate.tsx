@@ -6,8 +6,8 @@ export const IndiaGate = () => {
     return (
         <div>
             <Title name={"India Gate"}/>
-            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-3 md:grid-cols-5 h-[95vh] gap-2.5">
-                <div className="frame col-span-1 row-span-1 md:col-span-5 md:row-span-1 px-5 py-2.5 space-y-5 overflow-scroll">
+            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-5 h-[95vh] gap-2.5">
+                <div className="frame col-span-1 row-span-1 md:col-span-5 md:row-span-1 p-5 space-y-5 overflow-scroll">
                     <p>
                       This project, undertaken during my internship at a media studio, was a large-scale public art installation 
                       for the Election Commission of India. The challenge was to create a powerful visual narrative promoting 
@@ -28,12 +28,12 @@ export const IndiaGate = () => {
                     </p>
                 </div>                
                 <iframe 
-                  className="w-full h-full col-span-1 row-span-1 md:col-span-3 md:row-span-2 frame overflow-clip aspect-video"
+                  className="w-full h-full col-span-1 row-span-1 md:col-span-3 md:row-span-1 frame"
                   src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292573457404375042?compact=1" 
                   title="India Gate" 
                   allowFullScreen
                 />                
-                <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-2 frame overflow-clip content-center w-full">
+                <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-1 frame overflow-clip content-center w-full">
                   <Image 
                     src={ig} 
                     alt="India Gate" />

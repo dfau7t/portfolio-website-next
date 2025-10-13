@@ -13,7 +13,7 @@ export default function About() {
       <div className="uppercase font-semibold">
         creating<br /> play<br /> with immersive design
       </div>
-      <div className="w-[45vw] space-y-5">
+      <div className="md:w-[45vw] space-y-5">
         <p>
           Hello, I'm Srivatsa Pidaparthi. <br />
 
