@@ -6,8 +6,17 @@ export const IndiaGate = () => {
     return (
         <div>
             <Title name={"India Gate"}/>
-            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-5 h-[95vh] gap-2.5">
-                <div className="frame col-span-1 row-span-1 md:col-span-5 md:row-span-1 p-5 space-y-5 overflow-scroll">
+            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-3 md:grid-cols-3 gap-2.5">
+
+                <div className="col-span-1 row-span-1 md:col-span-1 md:row-span-3 frame overflow-clip content-center h-full">
+                  <Image 
+                    src={ig} 
+                    alt="India Gate" 
+                    className="h-full object-cover"
+                  />
+                </div> 
+
+                <div className="frame col-span-1 row-span-1 md:col-span-2 md:row-span-1 p-5 space-y-5 h-full">
                     <p>
                       This project, undertaken during my internship at a media studio, was a large-scale public art installation 
                       for the Election Commission of India. The challenge was to create a powerful visual narrative promoting 
@@ -26,18 +35,18 @@ export const IndiaGate = () => {
                       It was a unique opportunity to use cutting-edge technology to create a moment of shared public experience, turning a civic responsibility 
                       into an unforgettable work of art.
                     </p>
-                </div>                
+                </div>  
+
+                   
+
                 <iframe 
-                  className="w-full h-full col-span-1 row-span-1 md:col-span-3 md:row-span-1 frame"
+                  className="w-full col-span-1 row-span-1 md:col-span-2 md:row-span-2 h-full aspect-video frame"
                   src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292573457404375042?compact=1" 
                   title="India Gate" 
                   allowFullScreen
                 />                
-                <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-1 frame overflow-clip content-center w-full">
-                  <Image 
-                    src={ig} 
-                    alt="India Gate" />
-                </div>
+                
+                  
 
 
             </div>

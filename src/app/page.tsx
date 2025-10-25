@@ -2,15 +2,18 @@ import { Navbar } from "@/sections/Navbar";
 import { Hero } from "@/sections/Hero";
 import Title from "@/sections/Title";
 import Video from "@/sections/Video";
+import { EC } from "@/sections/EC";
 import { IndiaGate } from "@/sections/IndiaGate";
+import { OTA } from "@/sections/OTA";
 
 import { Showreel } from "@/data/showreel";
-import { ECImage } from "@/data/echochamber";
-
-import ig from "../../public/indiagate.jpg";
 
 import Link from "next/link";
 import Image from "next/image";
+
+import chordsynth from "../../public/chordsynth/cs_render_t2.png";
+import chordsynth2 from "../../public/chordsynth/cs_render_t3.png";
+import chordsynth3 from "../../public/chordsynth/cs_render_t4.png";
 
 export default function Home() {
   return (
@@ -33,28 +36,30 @@ export default function Home() {
         <Video key={video.link} img={video.img} link={video.link} desc={video.desc} />
       ))}
 
-      <Title name={"Echo Chamber"}/>
-      <div className="frame mx-5 my-2.5 px-5 py-2.5 items-center">
-        <div className="grid grid-cols-4 gap-5 justify-center items-center align-center">
-          {ECImage.map((image) => (
-            <Image key={image.alt} src={image.img} alt={image.alt} />
-          ))}
-        </div>
-      </div>
-      <div className="frame mx-5 my-2.5 px-5 py-2.5 items-center">
-          bleh
-      </div>
+      <EC />
 
       <IndiaGate />
 
-      <Title name={"Obedience to Authority"}/>
-      <div className="frame mx-5 my-2.5 px-5 py-2.5">
-        bleh
-      </div>
+      <OTA />
 
       <Title name={"Chordsynth"}/>
-      <div className="frame mx-5 my-2.5 px-5 py-2.5">
-        bleh
+      <div className="mx-5 my-2.5 grid md:grid-cols-2 gap-2.5">
+        <Image 
+            src={chordsynth}
+            alt="Chordsynth Render"
+            className="frame overflow-clip md:col-span-1"
+        />
+        <Image
+            src={chordsynth3}
+            alt="Chordsynth Render"
+            className="frame overflow-clip md:col-span-1"
+        />
+        <Image
+            src={chordsynth2}
+            alt="Chordsynth Render"
+            className="frame overflow-clip md:col-span-2"
+        />
+
       </div>
 
       <Title name={"Motion Design"}/>
