@@ -15,20 +15,20 @@ export const OTA = () => {
                     <Image 
                         src={poster}
                         alt="poster"
-                        className="h-full object-cover"
+                        className="h-full w-full"
                     />
                 </div>
 
                 <Image 
                     src={ota1}
                     alt="PSX"
-                    className="frame overflow-clip md:col-span-1 md:row-span-1"
+                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
 
                 <Image 
-                    src={recorder}
+                    src={machine}
                     alt="Unity"
-                    className="frame overflow-clip md:col-span-1 md:row-span-1"
+                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
 
                 <div className="frame px-5 py-2.5 md:col-span-2 md:row-span-1 overflow-scroll content-center">
@@ -61,7 +61,7 @@ export const OTA = () => {
                 </div>
 
                 <Image 
-                    src={machine}
+                    src={recorder}
                     alt="Unity"
                     className="frame overflow-clip md:col-span-1 md:row-span-1"
                 />
@@ -69,9 +69,9 @@ export const OTA = () => {
                 <Image 
                     src={ota1}
                     alt="Unity"
-                    className="frame overflow-clip md:col-span-1 md:row-span-1"
+                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
-                
+
             </div>                      
         </div>
     );

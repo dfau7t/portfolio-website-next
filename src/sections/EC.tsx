@@ -2,6 +2,9 @@ import Title from "@/sections/Title";
 import Image from "next/image";
 import { ECImage } from "@/data/echochamber";
 
+import vcv from "../../public/echo-chamber/vcv.png";
+import happy from "../../public/echo-chamber/happy-sqr.png";
+
 export const EC = () => {
     return (
         <div>
@@ -39,6 +42,20 @@ export const EC = () => {
                   It's a physical and mental escape from the "concrete jungle," created to foster a more mindful connection 
                   with our senses in a quiet, personal space away from our loud, hyper-personalized world.
                 </p>
+            </div>
+            <div className="grid grid-cols-2 mx-5 my-2.5 gap-2.5">
+                <Image 
+                  className="frame overflow-clip"
+                  src={vcv}
+                  alt=""
+                />
+
+                <Image 
+                  className="frame overflow-clip"
+                  src={happy}
+                  alt=""
+                />
+
             </div>
         </div>
     );
