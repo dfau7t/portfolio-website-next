@@ -14,14 +14,14 @@ export function VideoGrid({ items }: VideoGridProps) {
                 const videoUrl = getCldVideoUrl({
                     src: item.public_id,
                     width: 540,
-                    format: "auto",
+                    format: "webm",
                     quality: "auto",
                 });
 
                 const posterUrl = getCldVideoUrl({
                     src: item.public_id,
                     width: 540,
-                    format: "jpg",
+                    format: "webp",
                     quality: "auto",
                 });
 

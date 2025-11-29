@@ -1,4 +1,7 @@
+// 'use client';
+
 import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 export default async function EFE(props: any) {
     return (
