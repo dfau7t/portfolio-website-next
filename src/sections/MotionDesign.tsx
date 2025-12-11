@@ -26,7 +26,7 @@ export function VideoGrid({ items }: VideoGridProps) {
                 });
 
                 return (
-                    <div key={item.id} className="outer˝frame w-full overflow-clip">
+                    <div key={item.id} className="outerframe w-full overflow-clip">
                         <video className="w-full h-full object cover" playsInline loop muted autoPlay poster={posterUrl}>
                             <source src={videoUrl} />
                         </video>
