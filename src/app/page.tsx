@@ -21,9 +21,9 @@ import chordsynth3 from "../../public/chordsynth/cs_render_t4.png";
 export default function Home() {
   return (
     <main className="bg-background">
-        <div className="frame mx-5 my-2.5 mt-5">
-            <div className="flex justify-between text-secondary px-5 py-2.5">
-                <div className="font-sw font-semibold uppercase">
+        <div className="outerframe mx-5 my-2.5 mt-5">
+            <div className="flex justify-between text-secondary px-5 py-2.5 items-center">
+                <div className=" title font-title uppercase">
                     <Link href="/">Srivatsa Pidaparthi</Link>
                 </div>
                 <Navbar />
@@ -34,9 +34,9 @@ export default function Home() {
         </div>
 
         <Title name={"Showreel"}/>
-        <div className="frame mx-5 my-2.5">
+        <div className="outerframe mx-5 my-2.5">
             <div className="frame m-2.5 px-5 py-2.5">
-                <p className="text-center">
+                <p>
                   Exploring Fashion Expression - A set of short films that explore deep philosophical ideas, stories, and poems, through fashion.
                 </p>
             </div>
@@ -56,17 +56,17 @@ export default function Home() {
             <Image 
                 src={chordsynth}
                 alt="Chordsynth Render"
-                className="frame overflow-clip md:col-span-1"
+                className="outerframe overflow-clip md:col-span-1"
             />
             <Image
                 src={chordsynth3}
                 alt="Chordsynth Render"
-                className="frame overflow-clip md:col-span-1"
+                className="outerframe overflow-clip md:col-span-1"
             />
             <Image
                 src={chordsynth2}
                 alt="Chordsynth Render"
-                className="frame overflow-clip md:col-span-2"
+                className="outerframe overflow-clip md:col-span-2"
             />
         </div>
 

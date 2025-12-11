@@ -15,6 +15,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-title: var(--font-space-grotesk);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,10 +34,13 @@ p {
   @apply font-semibold text-sm;
 }
 
+.outerframe {
+  @apply rounded-3xl border-[0.5px] border-foreground
+}
 .frame {
-  @apply rounded-2xl border-1 border-foreground
+  @apply rounded-2xl border-[0.5px] border-foreground
 }
 
 .title {
-  @apply uppercase text-secondary font-semibold text-sm text-center
+  @apply uppercase text-secondary font-bold text-2xl text-left font-title
 }

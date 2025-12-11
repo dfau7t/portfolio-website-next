@@ -11,7 +11,7 @@ export const OTA = () => {
         <div>
             <Title name={"Obedience to Authority"}/>
             <div className="mx-5 my-2.5 grid md:grid-rows-4 md:grid-cols-2 gap-2.5">   
-                <div className="frame overflow-clip md:col-span-1 md:row-span-2 content-center">
+                <div className="outerframe overflow-clip md:col-span-1 md:row-span-2 content-center">
                     <Image 
                         src={poster}
                         alt="poster"
@@ -22,16 +22,16 @@ export const OTA = () => {
                 <Image 
                     src={ota1}
                     alt="PSX"
-                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
+                    className="outerframe h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
 
                 <Image 
                     src={machine}
                     alt="Unity"
-                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
+                    className="outerframe h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
 
-                <div className="frame px-5 py-2.5 md:col-span-2 md:row-span-1 overflow-scroll content-center">
+                <div className="outerframe px-5 py-2.5 md:col-span-2 md:row-span-1 overflow-scroll content-center">
                     <p className="space-y-5">
                         This project examines the unsettling pwer of authority through an experience 
                         that simulates the historic Milgram Experiment. It seeks to understand why 
@@ -63,13 +63,13 @@ export const OTA = () => {
                 <Image 
                     src={recorder}
                     alt="Unity"
-                    className="frame overflow-clip md:col-span-1 md:row-span-1"
+                    className="outerframe overflow-clip md:col-span-1 md:row-span-1"
                 />
 
                 <Image 
                     src={ota1}
                     alt="Unity"
-                    className="frame h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
+                    className="outerframe h-full object-cover overflow-clip md:col-span-1 md:row-span-1"
                 />
 
             </div>                      

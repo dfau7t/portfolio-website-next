@@ -9,7 +9,7 @@ interface VideoGridProps {
 
 export function VideoGrid({ items }: VideoGridProps) {
     return (
-        <div className="mx-5 grid grid-cols-1 md:grid-cols-4 auto-rows-min gap-2.5">
+        <div className="mx-5 grid grid-cols-1 md:grid-cols-3 auto-rows-min gap-2.5">
             {items.map((item) => {
                 const videoUrl = getCldVideoUrl({
                     src: item.public_id,
@@ -26,7 +26,7 @@ export function VideoGrid({ items }: VideoGridProps) {
                 });
 
                 return (
-                    <div key={item.id} className="frame w-full overflow-clip">
+                    <div key={item.id} className="outer˝frame w-full overflow-clip">
                         <video className="w-full h-full object cover" playsInline loop muted autoPlay poster={posterUrl}>
                             <source src={videoUrl} />
                         </video>
