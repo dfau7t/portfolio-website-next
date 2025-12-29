@@ -13,9 +13,9 @@ import { ThirtyDays } from "@/data/motiondesign";
 import Link from "next/link";
 import Image from "next/image";
 
-import chordsynth from "../../public/chordsynth/cs_render_t2.png";
-import chordsynth2 from "../../public/chordsynth/cs_render_t3.png";
-import chordsynth3 from "../../public/chordsynth/cs_render_t4.png";
+import chordsynth from "../../public/chordsynth/Digital Twin-1.png";
+import chordsynth2 from "../../public/chordsynth/Digital Twin.png";
+
 
 
 export default function Home() {
@@ -40,9 +40,12 @@ export default function Home() {
                   Exploring Fashion Expression - A set of short films that explore deep philosophical ideas, stories, and poems, through fashion.
                 </p>
             </div>
-            {Showreel.map((video) => (
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-2.5 mx-2.5 my-2.5">
+                {Showreel.map((video) => (
                 <EFE key={video.link} img={video.img} link={video.link} desc={video.desc} />
-            ))}
+                ))}
+            </div> 
+            
         </div>
 
         <EC />
@@ -53,25 +56,33 @@ export default function Home() {
 
         <Title name={"Chordsynth"}/>
         <div className="mx-5 my-2.5 grid md:grid-cols-2 gap-2.5">
-            <Image 
+            <Link href="https://www.behance.net/gallery/241200097/Chordsynth" className="md:col-span-2">
+            <Image
                 src={chordsynth}
                 alt="Chordsynth Render"
-                className="outerframe overflow-clip md:col-span-1"
-            />
-            <Image
-                src={chordsynth3}
-                alt="Chordsynth Render"
-                className="outerframe overflow-clip md:col-span-1"
-            />
+                className="outerframe overflow-clip md:col-span-2"
+            /></Link>
+
+            <div className="px-5 py-2.5 outerframe md:col-span-2">
+                <p>
+                    *insert text*
+                </p>
+            </div>
+
             <Image
                 src={chordsynth2}
                 alt="Chordsynth Render"
                 className="outerframe overflow-clip md:col-span-2"
             />
+
         </div>
 
         <Title name={"Motion Design"}/>
         <VideoGrid items={ThirtyDays} />
+
+        <div className="outerframe mx-5 my-2.5 px-5 py-2.5 bg-secondary">
+            <p className="text-background">This portfolio is my web development project.</p>
+        </div>
     </main>
   );
 }

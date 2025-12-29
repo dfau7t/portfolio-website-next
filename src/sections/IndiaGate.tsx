@@ -6,9 +6,9 @@ export const IndiaGate = () => {
     return (
         <div>
             <Title name={"India Gate"}/>
-            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-3 md:grid-cols-2 gap-2.5">
+            <div className="mx-5 grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-2 gap-2.5 h-[90vh]">
 
-                <div className="col-span-1 row-span-1 md:col-span-1 md:row-span-3 outerframe overflow-clip content-center h-full">
+                <div className="col-span-1 row-span-1 md:col-span-1 md:row-span-2 outerframe overflow-clip content-center h-full">
                   <Image 
                     src={ig} 
                     alt="India Gate" 
@@ -40,7 +40,7 @@ export const IndiaGate = () => {
                    
 
                 <iframe 
-                  className="w-full col-span-1 row-span-1 md:col-span-1 md:row-span-2 h-full aspect-video outerframe"
+                  className="w-full col-span-1 row-span-1 md:col-span-1 md:row-span-1 h-full aspect-video outerframe"
                   src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292573457404375042?compact=1" 
                   title="India Gate" 
                   allowFullScreen

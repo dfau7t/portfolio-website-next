@@ -4,17 +4,19 @@ import { ECImage } from "@/data/echochamber";
 
 import vcv from "../../public/echo-chamber/vcv.png";
 import happy from "../../public/echo-chamber/happy-sqr.png";
+import ec from "../../public/echo-chamber/echo_chamber.png";
+
 
 export const EC = () => {
     return (
         <div>
             <Title name={"Echo Chamber"}/>
             <div className="outerframe mx-5 my-2.5 px-5 py-2.5">
-              <div className="grid grid-cols-4 gap-1 md:gap-5 justify-center items-center align-center">
-                {ECImage.map((image) => (
-                  <Image key={image.alt} src={image.img} alt={image.alt} 
-                  />
-                ))}
+              <div>
+                <Image 
+                  src={ec}
+                  alt="Echo Chamber"
+                />
               </div>
             </div>
             <div className="outerframe mx-5 my-2.5 px-5 py-2.5 items-center">
@@ -43,7 +45,7 @@ export const EC = () => {
                   with our senses in a quiet, personal space away from our loud, hyper-personalized world.
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-3 mx-5 my-2.5 gap-2.5">
+            {/* <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-3 mx-5 my-2.5 gap-2.5">
                 <Image 
                   className="outerframe overflow-clip md:col-span-1 md:row-span-1 row-span-2"
                   src={vcv}
@@ -56,7 +58,7 @@ export const EC = () => {
                   alt=""
                 />
 
-            </div>
+            </div> */}
         </div>
     );
 }
