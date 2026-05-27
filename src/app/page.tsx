@@ -65,7 +65,13 @@ export default function Home() {
 
             <div className="px-5 py-2.5 outerframe md:col-span-2">
                 <p>
-                    *insert text*
+                    Chordsynth is a MIDI controller designed to bridge the gap between 
+                    music theory and play-like composition. By mapping the Circle of Fifths 
+                    onto a tactile interface, the device enables musicians to explore 
+                    complex harmonic progressions through spatial intuition rather than rote memory.
+                    The core solution lies in remapping the traditional linear piano layout into a Chord-centric layout. 
+                    By placing notes that are the “Perfect Fifth and Fourth” in direct proximity, the interface 
+                    simplifies music theory into simple geometric shapes.
                 </p>
             </div>
 

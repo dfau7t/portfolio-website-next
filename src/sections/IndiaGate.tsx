@@ -16,7 +16,7 @@ export const IndiaGate = () => {
                   />
                 </div> 
 
-                <div className="outerframe col-span-1 row-span-1 md:col-span-1 md:row-span-1 p-5 space-y-5 h-full">
+                <div className="outerframe col-span-1 row-span-2 md:col-span-1 md:row-span-1 p-5 space-y-5 h-full">
                     <p>
                       This project, undertaken during my internship at a media studio, was a large-scale public art installation 
                       for the Election Commission of India. The challenge was to create a powerful visual narrative promoting 
